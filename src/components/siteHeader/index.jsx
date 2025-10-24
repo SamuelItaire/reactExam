@@ -59,6 +59,9 @@ const SiteHeader = () => {
                   color="inherit"
                 >
                   <MenuIcon />
+                  <Button color="inherit" component={Link} to="/movies/top-rated">
+  TOP RATED
+</Button>
                 </IconButton>
                 <Menu
                   id="menu-appbar"

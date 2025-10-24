@@ -1,5 +1,5 @@
 # React In-class Exam, October 2025
-
+Samuel Itaire, 20103764
 ## 1. Setup instructions
 
 This repository contains the starting code for a lab-based React assessment. 
@@ -68,6 +68,7 @@ Add your name and student number to the README.md file, as shown below:
 # React In-class Exam, October 2025
 
 Your Name, Student Number
+Samuel Itaire, 20103764
 ...
 ~~~
 

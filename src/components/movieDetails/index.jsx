@@ -9,7 +9,7 @@ import Fab from "@mui/material/Fab";
 import Typography from "@mui/material/Typography";
 import Drawer from "@mui/material/Drawer";
 import MovieReviews from "../movieReviews"
-
+import SavingsIcon from '@mui/icons-material/Savings';
 
 const root = {
   display: "flex",
@@ -21,6 +21,11 @@ const root = {
 };
 const chip = { margin: 0.5 };
 
+const formatBudget = (budget) => {
+  if (!budget) return 'N/A';
+  
+  return `${(budget / 1000000).toFixed(0)}m`;
+};
 const MovieDetails = ({ movie }) => {  // Don't miss this!
   const [drawerOpen, setDrawerOpen] = useState(false);
 
@@ -47,7 +52,7 @@ const MovieDetails = ({ movie }) => {  // Don't miss this!
           </li>
         ))}
       </Paper>
-
+<Chip icon={<SavingsIcon />} label={`Budget: ${formatBudget(movie.budget)}`} />
       <Paper component="ul" sx={{ ...root }}>
         <Chip icon={<AccessTimeIcon />} label={`${movie.runtime} min.`} />
         <Chip
